@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FitCheck</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h1>FitCheck</h1>
+        <h3>Check your BMI</h3>
+        <p id="introText">Enter your weight and height below to check your BMI results</p>
+        <form>
+          <div class="input-group">
+            <label for="weight">Weight (KG)</label>
+            <input id="weight" type="number" name="weight" />
+          </div>
+          <div class="input-group">
+            <label for="height">Height (CM)</label>
+            <input id="height" type="number" name="height" />
+          </div>
+          <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+        </form>
+        <div id="results" class="result-text">Result will be published here.</div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
